@@ -21,9 +21,9 @@ public class Main {
     public static final int consumersNumber = 1000;
 
     private static final int bufferStartValue = 0;
-    private static final int numberOfSeconds = 30;
+    private static final int numberOfSeconds = 50;
 
-    public static final boolean isFair = true;
+    public static final boolean isFair = false;
     public static final boolean sameProb = true;
     public static final ArrayList<Integer> producersAccesses = new ArrayList<>(Collections.nCopies(M / 2 + 1, 0));
     public static final ArrayList<Integer> consumersAccesses = new ArrayList<>(Collections.nCopies(M / 2 + 1, 0));
