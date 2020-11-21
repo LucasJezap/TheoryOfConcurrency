@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Main {
-    static final boolean demo = false;
+    static final boolean demo = true;
     static final boolean isSynchronized = true;
     static final int boundsX = 0;
     static final int boundsY = 0;
