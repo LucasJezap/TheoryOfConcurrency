@@ -37,7 +37,7 @@ function getPathTask(path) {
 var pathTasks = paths.map(path => getPathTask(path));
 
 // pattern 
-async function asyncPaths(tasks, cb) {
+function asyncPaths(tasks, cb) {
     var time = performance.now();
     var counter = tasks.length;
     var callback = function() {

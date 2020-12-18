@@ -50,4 +50,13 @@ async function syncPaths(tasks, cb) {
     }
 }
 
+async function syncPaths2() {
+    var time = performance.now();
+    async.waterfall(pathTasks, () => {
+        console.log("Time elapsed (in milliseconds): ", performance.now() - time);
+        console.log("Global count: ", globalCount);
+    });
+}
+
 syncPaths(pathTasks, () => console.log("Global count: ", globalCount));
+syncPaths2();

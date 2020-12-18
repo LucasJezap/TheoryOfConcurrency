@@ -172,6 +172,9 @@ Philosopher.prototype.startStarvation = async function(count, timesx) {
     });
 }
 
+strategies = ['naive', 'asym', 'conductor', 'starvation'];
+strategy = 1;
+var cycles = 10;
 var N = 5;
 var forks = [];
 var philosophers = []
@@ -183,7 +186,6 @@ for (var i = 0; i < N; i++) {
     philosophers.push(new Philosopher(i, forks));
 }
 
-var cycles = 1000;
 
 async function run(timesx, strategy, philosophers_count) {
     const promises = [];
@@ -216,9 +218,6 @@ for (var i=0; i<N; i++) {
     timesx.push(0.0);
 }
 
-strategies = ['naive', 'asym', 'conductor', 'starvation'];
-
-strategy = 1;
 calculateTimes(timesx, strategies[strategy], N);
 console.log("Number of cycles: " + cycles);
 console.log("Strategy: " + strategies[strategy]);

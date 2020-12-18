@@ -55,7 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab 4" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -114,6 +114,7 @@
       <workItem from="1604838887589" duration="1495000" />
       <workItem from="1605010042387" duration="1842000" />
       <workItem from="1605035658219" duration="30000" />
+      <workItem from="1607020778078" duration="19000" />
     </task>
     <servers />
   </component>
@@ -141,10 +142,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="499" y="179" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1604835831965" />
-    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1604652290171">
+    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1607020795662">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1604652290171" />
+    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1607020795662" />
     <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1605013195282">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

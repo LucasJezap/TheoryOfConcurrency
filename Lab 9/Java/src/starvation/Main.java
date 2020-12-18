@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 public class Main {
 
     private static final int numberOfPhilosophers = 5;
-    private static final int numberOfSeconds = 5;
+    private static final int numberOfSeconds = 60;
     static ArrayList<Integer> accesses = new ArrayList<>(Collections.nCopies(numberOfPhilosophers, 0));
 
     public static void main(String[] args) throws InterruptedException {
