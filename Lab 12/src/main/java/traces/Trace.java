@@ -112,13 +112,24 @@ class Trace {
         while (index < word.length()) {
             StringBuilder new_foata_chunk = new StringBuilder("(");
             new_foata_chunk.append(topological.get(index));
-            while (index + 1 < word.length() && I.containsKey(topological.get(index))
-                    && I.get(topological.get(index)).contains(topological.get(index + 1))) {
-                new_foata_chunk.append(topological.get(++index));
+
+            int start_index = index++;
+            while (index < word.length()) {
+                boolean isIndependent = true;
+                for (int i = start_index; i < index; i++) {
+                    if (!I.containsKey(topological.get(index))
+                            || !I.get(topological.get(index)).contains(topological.get(i))) {
+                        isIndependent = false;
+                        break;
+                    }
+                }
+                if (isIndependent)
+                    new_foata_chunk.append(topological.get(index++));
+                else
+                    break;
             }
             new_foata_chunk.append(")");
             foataFromGraphForm.append(new_foata_chunk);
-            index++;
         }
     }
 
