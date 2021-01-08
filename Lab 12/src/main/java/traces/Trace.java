@@ -151,7 +151,7 @@ class Trace {
         System.out.println("D: {" + String.join(", ", tmp2) + "}");
         System.out.println("Traces: {" + String.join(", ", traces) + "}");
         System.out.println("Foata form: " + foataForm);
-        System.out.println("Graph:\n" + dgraph.getGraphInfo());
         System.out.println("Foata (from Graph) form: " + foataFromGraphForm);
+        System.out.println("Graph:\n" + dgraph.getGraphInfo());
     }
 }
